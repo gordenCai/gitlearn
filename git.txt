@@ -1,0 +1,31 @@
+教程链接：https://www.liaoxuefeng.com/wiki/896043488029600
+
+1. git 安装
+Mac: 使用Xcode。
+Win:https://git-scm.com/downloads,直接下载安装
+
+
+2. 创建版本库
+在文件夹右键打开git bash, 然后输入，命令 git init
+
+3. 查看版本库状态
+命令 git status
+
+4. 把文件添加到版本库
+命令 git add <file_name>
+
+5. 把文件提交到仓库
+命令 git commit -m "<message>"
+
+6.查看某个文件被更改的内容
+命令 git diff <file_name>
+
+7.命令显示从最近到最远的提交日志
+命令 git log
+回退到上个版本： git reset --hard HEAD^
+
+8. 将git仓库推送到github服务器
+首先在本地电脑创建ssh库，然后登陆github，在GitHub中添加本地电脑的ssh key
+8.1 在GitHub上面创建一个远程库“Create a new repo”
+8.2 在本地仓库中运行命令 git remote add origin git@github.com:github_name/repo_name.git
+8.3 第一次使用命令 git push -u origin master 将本地仓库的内容推送到GitHub仓库中，之后每次使用命令git push origin master 即可
